@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
     <link rel="stylesheet" href="style.css">
-    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
-<body>
-   <div class="col-md-12 text-center">
-        <h3 class="animate-charcter">Chanchal Sen</h3>
-        <div class="container">
-            <h1 class="heading">Temperature Convertor</h1>
-            <div class="temp-container">
-                <label for="Celcius">Celcius</label>
-                <input onchange="computeTemp(event)" type="number" name="Celcius" id="Celcius" class="Celcius"
-                    placeholder="Enter the Celcius" />
-            </div>
-            <div class="temp-container">
-                <label for="Fahrenheit">Fahrenheit</label>
-                <input onchange="computeTemp(event)" type="number" name="Fahrenheit" id="Fahrenheit" class="Fahrenheit"
-                    placeholder="Enter the Fahrenheit" />
 
-            </div>
-            <div class="temp-container">
-                <label for="Kelvin">Kelvin</label>
-                <input onchange="computeTemp(event)" type="number" name="Kelvin" id="Kelvin" class="Kelvin"
-                    placeholder="Enter the Kelvin" />
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="task-bar">
+            <i class="bi bi-clock-fill"></i>
+            <div id="p1"></div>
+            <div class="icons">
+                <i class="bi bi-bell-slash-fill"></i>
+                <i class="bi bi-bluetooth"></i>
+                <i class="bi bi-battery-charging"></i>
             </div>
         </div>
-        <script src="index.js"></script>
+        <h1>Celcius-Fahrenheit-Kelvin-Rankine Converter</h1>
+        <div class="inputs">
+            <div style="display: flex;
+            flex-direction: column;">
+                <label for="degree">Value <span id="small">(In Numbers...)</span></label>
+                <input type="number" name="degree" id="inputValue" required>
+            </div>
+            <div class="inptsss">
+                <div>
+                    <label for="type">From</label>
+                    <select name="type" id="type1">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="type">To</label>
+                    <select name="type" id="type2">
+                        <option value="celcius">Celcius</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="rankine">Rankine</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="submit" id="btn" onclick="temperature()">Convert</button>
+        <div class="resultss">
+            <label for="result">Result</label>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Designed by <a href="https://www.linkedin.com/in/arpan-chowdhury-775294251/">Arpan Chowdhury</a></p>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
