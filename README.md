@@ -22,15 +22,6 @@ To run the Temperature Converter web app locally, follow these steps:
 
 1. **Clone the repository:** Start by cloning this repository to your local machine.
 
-   ```bash
-   git clone https://github.com/your-username/temperature-converter.git
-   ```
-
-2. **Navigate to the project folder:** Move into the project directory.
-
-   ```bash
-   cd temperature-converter
-   ```
 
 3. **Open the app:** Simply open the `index.html` file in your preferred web browser.
 
