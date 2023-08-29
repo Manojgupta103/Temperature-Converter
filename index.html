@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temperature Convertor</title>
+</head>
+<body>
+   <div class="col-md-12 text-center">
+        <h3 class="animate-charcter">Chanchal Sen</h3>
+        <div class="container">
+            <h1 class="heading">Temperature Convertor</h1>
+            <div class="temp-container">
+                <label for="Celcius">Celcius</label>
+                <input onchange="computeTemp(event)" type="number" name="Celcius" id="Celcius" class="Celcius"
+                    placeholder="Enter the Celcius" />
+            </div>
+            <div class="temp-container">
+                <label for="Fahrenheit">Fahrenheit</label>
+                <input onchange="computeTemp(event)" type="number" name="Fahrenheit" id="Fahrenheit" class="Fahrenheit"
+                    placeholder="Enter the Fahrenheit" />
+
+            </div>
+            <div class="temp-container">
+                <label for="Kelvin">Kelvin</label>
+                <input onchange="computeTemp(event)" type="number" name="Kelvin" id="Kelvin" class="Kelvin"
+                    placeholder="Enter the Kelvin" />
+            </div>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
