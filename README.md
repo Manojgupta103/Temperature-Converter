@@ -35,6 +35,7 @@ To run the Temperature Converter web app locally, follow these steps:
 
 ![Pic 1](https://github.com/Manya103/Temperature-Converter/assets/113758890/388f0426-b519-4ffa-b7f5-2eae31e96486)
 
+Manoj R Gupta 
 
 ## Contributing
 
